@@ -152,4 +152,40 @@
         align-items: center;
     }
 
+
+    /* success.html */
+
+    .tks-top {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .logo-img {
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    .titulo-img{
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .texto {
+        margin-top: 30px;
+        max-width: 97%;
+        text-align: center;
+        font-family: 'Cabin', sans-serif;
+        color: #ECEEEF;
+    }
+
+    .success {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-confirmado {
+        margin-top: 26px;
+        width: 70%;
+    }
 }
