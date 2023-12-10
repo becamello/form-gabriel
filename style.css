@@ -7,7 +7,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
     body {
         width: 100%;
         height: 100vh;
@@ -151,4 +151,48 @@
         justify-content: center;
         align-items: center;
     }
+
+    .desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 491px) {
+
+    .titulo {
+        display: none;
+    }
+
+    .sub-titulo {
+        display: none;
+    }
+
+    .img-top {
+        display: none;
+    }
+    
+    .form-container {
+        display: none;
+    }
+
+    .img-bottom {
+        display: none;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background: rgb(44,135,186);
+        background-repeat: nor;
+    }
+
+    .desktop {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
 }
