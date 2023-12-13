@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirme sua presença!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo">
+        <img src="./img/Confirme sua presença!.svg" alt="Confirme sua presença!">
+    </div>
+
+    <div class="sub-titulo">
+        <p class="p1">Adicione seu nome e idade para confirmar sua presença.</p>
+        <p class="p2">Caso deseje adicionar mais pessoas, clique no botão "+1 pessoa"</p>
+    </div>
+    
+
+    <div class="img-top">
+        <img src="./img/patrulha-canina-32.png" alt="" srcset="">
+    </div>
+
+    <section class="form-container">
+        <div class="container">
+            <form action="https://api.sheetmonkey.io/form/jHKxqeHXcsMN6811EkkNwU" method="post" id="form">
+                <div id="box">
+                    <input type="text" name="pessoa1" autocomplete="off" id="nome-box" class="input">
+                    <label>Nome e sobrenome</label>
+                    
+                    <br>
+
+                    <input type="number" name="pessoa1" autocomplete="off" id="nome-box" class="input">
+                    <label>Idade</label>
+
+                    <br>
+
+                </div>
+
+                <div class="btns">
+                    <div class="add-pessoa">
+                        <button type="button" class="add" id="add">+1 Pessoa</button>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" form="form" class="btn-submit"><img src="./img/check-mark-button_2705.png" alt=""> Confirmar presença </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <div class="img-bottom">
+        <img src="./img/patrulha-canina-05.png" alt="" srcset="">
+    </div>
+
+    <div class="desktop">
+
+        <img src="./img/Ops... acesse este site com seu celular..svg" alt="">
+
+        <img src="./img/976604_appliances_cell phone_cellphone_mobile_mobilephone_icon 1.svg" alt="">
+    </div>
+
+    <script>
+    var btn_add = document.getElementById('add');
+    var form = document.getElementById('form');
+    var box = document.getElementById('box');
+
+
+    var contador = 1;
+
+
+    btn_add.addEventListener('click', function(){
+        contador++;
+        br();
+        createInput1();
+        createLabel1();
+        
+        br();
+
+        createInput2();
+        createLabel2();
+
+        br();
+    });
+
+    function createInput1(){
+        var elemento = document.createElement('input');
+        elemento.setAttribute('type', 'text');
+        elemento.setAttribute('name', 'pessoa' + contador);
+        elemento.setAttribute('id', 'pessoa' + contador);
+        elemento.setAttribute('autocomplete', 'off');
+        elemento.setAttribute('class', 'input');
+
+        box.appendChild(elemento);
+    }
+
+    function createLabel1(){
+        var elemento = document.createElement('label');
+        elemento.textContent = ' Nome e sobrenome '
+
+        box.appendChild(elemento);
+    }
+
+    function createInput2(){
+        var elemento = document.createElement('input');
+        elemento.setAttribute('type', 'number');
+        elemento.setAttribute('name', 'pessoa' + contador);
+        elemento.setAttribute('id', 'nome');
+        elemento.setAttribute('autocomplete', 'off');
+        elemento.setAttribute('class', 'input');
+
+        box.appendChild(elemento);
+    }
+
+
+    function createLabel2(){
+        var elemento = document.createElement('label');
+        elemento.textContent = ' Idade '
+
+        box.appendChild(elemento);
+    }
+
+
+    function br(){
+        var elemento = document.createElement('br');
+
+        box.appendChild(elemento);
+    }
+    </script>
+</body>
+</html>
