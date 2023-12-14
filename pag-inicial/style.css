@@ -20,11 +20,11 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 110px;
+        top: 80px;
     }
 
     .logo img {
-        width: 30%;
+        width: 35%;
     }
 
     .inicial-container {
@@ -37,9 +37,9 @@
         width: auto;
         height: auto;
         padding: 20px;
-        padding-bottom: 70px;
+        padding-bottom: 140px;
         border-radius: 20px;
-        margin: 30px;
+        margin: 0px 30px;
         margin-bottom: 20px;
     }
 
@@ -51,13 +51,86 @@
 
     .sub-titulo p {
         font-family: 'Cabin', sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         color: #ECEEEF;
+        text-align: center;
+    }
+
+    .p-tabela {
+        margin-top: 50px;
+
+        font-family: 'Cabin', sans-serif;
+        font-size: 18px;
+        color: #ECEEEF;
+        text-align: center;
+    }
+
+    .img-tabela {
+        margin-top: 20px;
+
+        width: 100%;
+    }
+
+    .pix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo-pix  {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        margin-bottom: 12px;
+    }
+
+    .titulo-pix p {
+        margin-top: 25px;
+
+        font-family: 'Cabin', sans-serif;
+        font-size: 18px;
+        color: #ECEEEF;
+        text-align: center;
+    }
+
+    .titulo-pix input {
+        background: none;
+        border: none;
+        padding-left: 10px;
+        width: 150px;
+
+        font-family: 'Cabin', sans-serif;
+        font-size: 18px;
+        color: #ECEEEF;
+
+        outline: #44BCFF;
+    }
+
+    .swal2-popup {
+        font-family: 'Cabin', sans-serif;
+        width: 300px !important;
+      }
+
+    .pix button {
+        font-family: 'Cabin', sans-serif;
+        outline: none;
+        border: 2px solid #ECEEEF;
+        background-color: #64B3D7;
+        padding: 4px;
+        border-radius: 8px;
+        width: 150px;
+        color: #ECEEEF;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
+    .confirmar a {
+        margin-top: 60px;
 
-    .btn-submit {
         font-family: 'Cabin', sans-serif;
         outline: none;
         border: 2px solid #ECEEEF;
@@ -70,6 +143,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 170px;
+    }
+
+    .image img {
+        width: 90%;
     }
 
     .desktop {
@@ -114,5 +199,8 @@
         flex-direction: column;
     }
 
+    .logo {
+        display: none;
+    }
 
 }

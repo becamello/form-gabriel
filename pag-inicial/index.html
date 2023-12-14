@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite - Gabriel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="logo">
+        <img src="./img/logo edit.png" alt="">
+    </div>
+
+    <div class="container">
+        <div class="inicial-container">
+
+            <div class="titulo">
+                <img src="./img/titulo-convidado.svg" alt="Você foi convidado para a festa do Gabriel!">
+            </div>
+
+            <div class="sub-titulo">
+                <p class="p1">Iremos comemorar com um rodízio de pizza bem gostoso no Salão de Festas Fazendinha.</p>
+            </div>
+
+            <div class="tabela">
+                <div class="titulo-tabela">
+                    <p class="p-tabela">
+                        O valor do rodízio será de acordo com a idade do convidado, sendo:
+                    </p>
+                </div>
+
+                <div class="imagem-tabela">
+                    <img src="./img/tabela-preços.svg" class="img-tabela">
+                </div>
+            </div>
+
+            <div class="pix">
+                <div class="titulo-pix">
+                    <p>CHAVE PIX:</p> <input type="text" name="texto" id="texto" value="(21) 99459-0742"/>
+                </div>
+                <button onclick="copiarTexto()">COPIAR CHAVE PIX</button>
+            </div>
+
+            <div class="confirmar">
+                <a href="../confirmar.html">Confirmar Presença</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="./img/patrulha-canina-25.png" alt="">
+    </div>
+
+    <div class="desktop">
+
+        <img src="./img/Ops... acesse este site com seu celular..svg" alt="">
+
+        <img src="./img/976604_appliances_cell phone_cellphone_mobile_mobilephone_icon 1.svg" alt="">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Chave Pix 
+        document.getElementById('texto').readOnly = true;
+        function copiarTexto() {
+            let textoCopiado = document.getElementById("texto");
+            textoCopiado.select();
+            textoCopiado.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+
+            const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+            });
+            Toast.fire({
+            icon: "success",
+            iconColor: '#ECEEEF',
+            title: "Chave pix copiada!",
+            color: '#ECEEEF',
+            background: '#64B3D7',
+            });
+        }
+
+
+    </script>
+</body>
+</html>
