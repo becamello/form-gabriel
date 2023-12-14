@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirme sua presença!</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="titulo">
@@ -60,8 +61,20 @@
 
         <img src="./img/976604_appliances_cell phone_cellphone_mobile_mobilephone_icon 1.svg" alt="">
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script> 
+    Swal.fire({
+    title: "FAVOR CONFIRMAR A PRESENÇA APENAS APÓS O PAGAMENTO",
+    text: "CLIQUE ABAIXO PARA PROSSEGUIR",
+    confirmButtonText: "ESTOU CIENTE DO PAGAMENTO E JÁ REALIZEI.",
+    footer: '*PAGAMENTO DEVERÁ SER REALIZADO ATÉ A DATA 15/01/2024',
+    backdrop: `
+    rgba(42,84,122,0.95)
+    `
+    });
 
-    <script>
+    //CRIAR INPUTS
     var btn_add = document.getElementById('add');
     var form = document.getElementById('form');
     var box = document.getElementById('box');
